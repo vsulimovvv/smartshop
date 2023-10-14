@@ -1,0 +1,1312 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Favicon -->
+<link rel="shortcut icon" href="img/favicon.png" type="image/x-icon" />
+
+<!-- Link Swiper's CSS -->
+<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+
+<!-- nouislider -->
+<link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/noUiSlider/15.5.0/nouislider.min.css"
+/>
+
+<!-- Choices JS  -->
+<link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/choices.js/public/assets/styles/choices.min.css"
+/>
+
+<!-- fancybox -->
+<link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css"
+/>
+
+<!-- Custom Link -->
+<link rel="stylesheet" href="css/style.css" />
+
+<title>SmartShop</title>
+
+  </head>
+
+  <body>
+    <div class="popup popup--online-booking">
+  <div class="popup__container">
+    <button class="popup__close" type="button" aria-label="Закрыть">
+      <svg width="15" height="15">
+        <use xlink:href="img/sprite.svg#close"></use>
+      </svg>
+    </button>
+    <div class="popup__wrapper">
+      <h2 class="popup__title">Онлайн запись</h2>
+      <div class="popup__text">
+        <p>Оставьте ваши данные и мы вам перезвоним.</p>
+      </div>
+
+      <form class="form-submit">
+        <div class="form-submit__group">
+          <label class="form-submit__label" for="online-name">Имя</label>
+
+          <input
+            class="form-submit__input"
+            name="name"
+            id="online-name"
+            type="text"
+            placeholder="Введите ваше имя"
+            required
+          />
+        </div>
+        <div class="form-submit__group">
+          <label class="form-submit__label" for="online-tel">
+            Контактный телефон
+          </label>
+
+          <input
+            class="form-submit__input"
+            name="tel"
+            id="online-tel"
+            type="tel"
+            placeholder="+7 (___) ___-__-__"
+            required
+          />
+        </div>
+
+        <button class="form-submit__btn btn" type="button">
+          Заказать звонок
+        </button>
+      </form>
+    </div>
+  </div>
+</div>
+
+
+    <div class="site-wrapper">
+      <header class="header">
+  <!-- Mobile Menu -->
+  <div class="overlay"></div>
+
+  <div class="mobile-menu">
+    <div class="mobile-menu__top">
+      <a class="mobile-menu__logo logo" href="#">
+        <img src="img/logo.png" alt="логотип" />
+      </a>
+      <button
+        class="mobile-menu__close"
+        type="button"
+        aria-label="Закрыть меню"
+      >
+        <svg
+          width="24"
+          height="24"
+          viewBox="0 0 24 24"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M6 6L18 18"
+            stroke="#f1ebda"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+          <path
+            d="M18 6L6 18"
+            stroke="#f1ebda"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+        </svg>
+      </button>
+    </div>
+
+    <ul class="mobile-menu__list">
+      <li class="mobile-menu__item">
+        <a class="mobile-menu__link" href="#"><span>Пункт меню</span></a>
+      </li>
+      <li class="mobile-menu__item">
+        <a class="mobile-menu__link" href="#"><span>Пункт меню</span></a>
+      </li>
+      <li class="mobile-menu__item">
+        <a class="mobile-menu__link" href="#"><span>Пункт меню</span></a>
+      </li>
+    </ul>
+
+    <div class="mobile-menu__btns">
+      <a class="mobile-menu__phone" href="tel:+74994990917">
+        +7 (499) 499 09 17
+      </a>
+      <!-- <button class="mobile-menu__btn btn" type="button">Онлайн запись</button> -->
+    </div>
+  </div>
+  <!-- Mobile Menu -->
+
+  <div class="container">
+    <div class="header__wrapper"></div>
+  </div>
+</header>
+
+
+      <main class="main">
+        <section class="hero">
+  <div class="container"></div>
+</section>
+ <section class="types">
+  <div class="container">
+    <h2 class="types__title">Виды спорта</h2>
+
+    <ul class="types__list">
+      <li class="types-item">
+        <div class="types-item__img">
+          <img src="img/types/1.jpg" alt="img" />
+        </div>
+        <a class="types-item__btn btn btn--arrow" href="#">
+          Сноубординг
+          <svg
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <g clip-path="url(#clip0_2302_21510)">
+              <path
+                d="M23.12 9.9099L19.25 5.9999C19.157 5.90617 19.0464 5.83178 18.9246 5.78101C18.8027 5.73024 18.672 5.7041 18.54 5.7041C18.408 5.7041 18.2773 5.73024 18.1554 5.78101C18.0336 5.83178 17.923 5.90617 17.83 5.9999V5.9999C17.6437 6.18726 17.5392 6.44071 17.5392 6.7049C17.5392 6.96909 17.6437 7.22254 17.83 7.4099L21.39 10.9999H1C0.734784 10.9999 0.48043 11.1053 0.292893 11.2928C0.105357 11.4803 0 11.7347 0 11.9999H0C0 12.2651 0.105357 12.5195 0.292893 12.707C0.48043 12.8945 0.734784 12.9999 1 12.9999H21.45L17.83 16.6099C17.7363 16.7029 17.6619 16.8135 17.6111 16.9353C17.5603 17.0572 17.5342 17.1879 17.5342 17.3199C17.5342 17.4519 17.5603 17.5826 17.6111 17.7045C17.6619 17.8263 17.7363 17.9369 17.83 18.0299C17.923 18.1236 18.0336 18.198 18.1554 18.2488C18.2773 18.2996 18.408 18.3257 18.54 18.3257C18.672 18.3257 18.8027 18.2996 18.9246 18.2488C19.0464 18.198 19.157 18.1236 19.25 18.0299L23.12 14.1499C23.6818 13.5874 23.9974 12.8249 23.9974 12.0299C23.9974 11.2349 23.6818 10.4724 23.12 9.9099V9.9099Z"
+                fill="currentColor"
+              />
+            </g>
+            <defs>
+              <clipPath id="clip0_2302_21510">
+                <rect width="24" height="24" fill="currentColor" />
+              </clipPath>
+            </defs>
+          </svg>
+        </a>
+      </li>
+      <li class="types-item">
+        <div class="types-item__img">
+          <img src="img/types/2.jpg" alt="img" />
+        </div>
+        <a class="types-item__btn btn btn--arrow" href="#">
+          Горные лыжи
+          <svg
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <g clip-path="url(#clip0_2302_21510)">
+              <path
+                d="M23.12 9.9099L19.25 5.9999C19.157 5.90617 19.0464 5.83178 18.9246 5.78101C18.8027 5.73024 18.672 5.7041 18.54 5.7041C18.408 5.7041 18.2773 5.73024 18.1554 5.78101C18.0336 5.83178 17.923 5.90617 17.83 5.9999V5.9999C17.6437 6.18726 17.5392 6.44071 17.5392 6.7049C17.5392 6.96909 17.6437 7.22254 17.83 7.4099L21.39 10.9999H1C0.734784 10.9999 0.48043 11.1053 0.292893 11.2928C0.105357 11.4803 0 11.7347 0 11.9999H0C0 12.2651 0.105357 12.5195 0.292893 12.707C0.48043 12.8945 0.734784 12.9999 1 12.9999H21.45L17.83 16.6099C17.7363 16.7029 17.6619 16.8135 17.6111 16.9353C17.5603 17.0572 17.5342 17.1879 17.5342 17.3199C17.5342 17.4519 17.5603 17.5826 17.6111 17.7045C17.6619 17.8263 17.7363 17.9369 17.83 18.0299C17.923 18.1236 18.0336 18.198 18.1554 18.2488C18.2773 18.2996 18.408 18.3257 18.54 18.3257C18.672 18.3257 18.8027 18.2996 18.9246 18.2488C19.0464 18.198 19.157 18.1236 19.25 18.0299L23.12 14.1499C23.6818 13.5874 23.9974 12.8249 23.9974 12.0299C23.9974 11.2349 23.6818 10.4724 23.12 9.9099V9.9099Z"
+                fill="currentColor"
+              />
+            </g>
+            <defs>
+              <clipPath id="clip0_2302_21510">
+                <rect width="24" height="24" fill="currentColor" />
+              </clipPath>
+            </defs>
+          </svg>
+        </a>
+      </li>
+      <li class="types-item">
+        <div class="types-item__img">
+          <img src="img/types/3.jpg" alt="img" />
+        </div>
+        <a class="types-item__btn btn btn--arrow" href="#">
+          Скейтбординг
+          <svg
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <g clip-path="url(#clip0_2302_21510)">
+              <path
+                d="M23.12 9.9099L19.25 5.9999C19.157 5.90617 19.0464 5.83178 18.9246 5.78101C18.8027 5.73024 18.672 5.7041 18.54 5.7041C18.408 5.7041 18.2773 5.73024 18.1554 5.78101C18.0336 5.83178 17.923 5.90617 17.83 5.9999V5.9999C17.6437 6.18726 17.5392 6.44071 17.5392 6.7049C17.5392 6.96909 17.6437 7.22254 17.83 7.4099L21.39 10.9999H1C0.734784 10.9999 0.48043 11.1053 0.292893 11.2928C0.105357 11.4803 0 11.7347 0 11.9999H0C0 12.2651 0.105357 12.5195 0.292893 12.707C0.48043 12.8945 0.734784 12.9999 1 12.9999H21.45L17.83 16.6099C17.7363 16.7029 17.6619 16.8135 17.6111 16.9353C17.5603 17.0572 17.5342 17.1879 17.5342 17.3199C17.5342 17.4519 17.5603 17.5826 17.6111 17.7045C17.6619 17.8263 17.7363 17.9369 17.83 18.0299C17.923 18.1236 18.0336 18.198 18.1554 18.2488C18.2773 18.2996 18.408 18.3257 18.54 18.3257C18.672 18.3257 18.8027 18.2996 18.9246 18.2488C19.0464 18.198 19.157 18.1236 19.25 18.0299L23.12 14.1499C23.6818 13.5874 23.9974 12.8249 23.9974 12.0299C23.9974 11.2349 23.6818 10.4724 23.12 9.9099V9.9099Z"
+                fill="currentColor"
+              />
+            </g>
+            <defs>
+              <clipPath id="clip0_2302_21510">
+                <rect width="24" height="24" fill="currentColor" />
+              </clipPath>
+            </defs>
+          </svg>
+        </a>
+      </li>
+    </ul>
+  </div>
+</section>
+
+        <section class="categories-slider">
+  <div class="container">
+    <h2 class="visually-hidden">Категории</h2>
+    <div class="categories-slider__slider swiper">
+      <ul class="categories-slider__slides swiper-wrapper">
+        <li class="categories-slider__slide swiper-slide">
+          <a class="categories-card" href="#">
+            <span class="categories-card__img-wrap border-dashed">
+              <svg
+                class="card-border"
+                xmlns="http://www.w3.org/2000/svg"
+                width="135"
+                height="135"
+                viewBox="0 0 135 135"
+                fill="none"
+              >
+                <circle
+                  cx="67.5"
+                  cy="67.5"
+                  r="66.5"
+                  stroke="#DDDDDD"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-dasharray="10 10"
+                />
+              </svg>
+              <span class="categories-card__img">
+                <picture>
+                  <source srcset="img/categories/1.webp" type="image/webp" />
+                  <img src="img/categories/1.png" alt="img" />
+                </picture>
+              </span>
+            </span>
+            <span class="categories-card__name">Новинки</span>
+          </a>
+        </li>
+        <li class="categories-slider__slide swiper-slide">
+          <a class="categories-card" href="#">
+            <span class="categories-card__img-wrap">
+              <svg
+                class="card-border"
+                xmlns="http://www.w3.org/2000/svg"
+                width="135"
+                height="135"
+                viewBox="0 0 135 135"
+                fill="none"
+              >
+                <circle
+                  cx="67.5"
+                  cy="67.5"
+                  r="66.5"
+                  stroke="#8B8B8B"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                />
+              </svg>
+              <span class="categories-card__img">
+                <picture>
+                  <source srcset="img/categories/2.webp" type="image/webp" />
+                  <img src="img/categories/2.png" alt="img" />
+                </picture>
+              </span>
+            </span>
+            <span class="categories-card__name">Новинки</span>
+          </a>
+        </li>
+        <li class="categories-slider__slide swiper-slide">
+          <a class="categories-card" href="#">
+            <span class="categories-card__img-wrap">
+              <svg
+                class="card-border"
+                xmlns="http://www.w3.org/2000/svg"
+                width="135"
+                height="135"
+                viewBox="0 0 135 135"
+                fill="none"
+              >
+                <circle
+                  cx="67.5"
+                  cy="67.5"
+                  r="66.5"
+                  stroke="#8B8B8B"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                />
+              </svg>
+              <span class="categories-card__img">
+                <picture>
+                  <source srcset="img/categories/3.webp" type="image/webp" />
+                  <img src="img/categories/3.png" alt="img" />
+                </picture>
+              </span>
+            </span>
+            <span class="categories-card__name">Новинки</span>
+          </a>
+        </li>
+        <li class="categories-slider__slide swiper-slide">
+          <a class="categories-card" href="#">
+            <span class="categories-card__img-wrap">
+              <svg
+                class="card-border"
+                xmlns="http://www.w3.org/2000/svg"
+                width="135"
+                height="135"
+                viewBox="0 0 135 135"
+                fill="none"
+              >
+                <circle
+                  cx="67.5"
+                  cy="67.5"
+                  r="66.5"
+                  stroke="#8B8B8B"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                />
+              </svg>
+              <span class="categories-card__img">
+                <picture>
+                  <source srcset="img/categories/4.webp" type="image/webp" />
+                  <img src="img/categories/4.png" alt="img" />
+                </picture>
+              </span>
+            </span>
+            <span class="categories-card__name">Новинки</span>
+          </a>
+        </li>
+        <li class="categories-slider__slide swiper-slide">
+          <a class="categories-card" href="#">
+            <span class="categories-card__img-wrap">
+              <svg
+                class="card-border"
+                xmlns="http://www.w3.org/2000/svg"
+                width="135"
+                height="135"
+                viewBox="0 0 135 135"
+                fill="none"
+              >
+                <circle
+                  cx="67.5"
+                  cy="67.5"
+                  r="66.5"
+                  stroke="#8B8B8B"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                />
+              </svg>
+              <span class="categories-card__img">
+                <picture>
+                  <source srcset="img/categories/5.webp" type="image/webp" />
+                  <img src="img/categories/5.png" alt="img" />
+                </picture>
+              </span>
+            </span>
+            <span class="categories-card__name">Новинки</span>
+          </a>
+        </li>
+        <li class="categories-slider__slide swiper-slide">
+          <a class="categories-card" href="#">
+            <span class="categories-card__img-wrap">
+              <svg
+                class="card-border"
+                xmlns="http://www.w3.org/2000/svg"
+                width="135"
+                height="135"
+                viewBox="0 0 135 135"
+                fill="none"
+              >
+                <circle
+                  cx="67.5"
+                  cy="67.5"
+                  r="66.5"
+                  stroke="#8B8B8B"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                />
+              </svg>
+              <span class="categories-card__img">
+                <picture>
+                  <source srcset="img/categories/6.webp" type="image/webp" />
+                  <img src="img/categories/6.png" alt="img" />
+                </picture>
+              </span>
+            </span>
+            <span class="categories-card__name">Новинки</span>
+          </a>
+        </li>
+        <li class="categories-slider__slide swiper-slide">
+          <a class="categories-card" href="#">
+            <span class="categories-card__img-wrap">
+              <svg
+                class="card-border"
+                xmlns="http://www.w3.org/2000/svg"
+                width="135"
+                height="135"
+                viewBox="0 0 135 135"
+                fill="none"
+              >
+                <circle
+                  cx="67.5"
+                  cy="67.5"
+                  r="66.5"
+                  stroke="#8B8B8B"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                />
+              </svg>
+              <span class="categories-card__img">
+                <picture>
+                  <source srcset="img/categories/7.webp" type="image/webp" />
+                  <img src="img/categories/7.png" alt="img" />
+                </picture>
+              </span>
+            </span>
+            <span class="categories-card__name">Новинки</span>
+          </a>
+        </li>
+        <li class="categories-slider__slide swiper-slide">
+          <a class="categories-card" href="#">
+            <span class="categories-card__img-wrap border-dashed">
+              <svg
+                class="card-border"
+                xmlns="http://www.w3.org/2000/svg"
+                width="135"
+                height="135"
+                viewBox="0 0 135 135"
+                fill="none"
+              >
+                <circle
+                  cx="67.5"
+                  cy="67.5"
+                  r="66.5"
+                  stroke="#DDDDDD"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-dasharray="10 10"
+                />
+              </svg>
+              <span class="categories-card__img">
+                <picture>
+                  <source srcset="img/categories/1.webp" type="image/webp" />
+                  <img src="img/categories/1.png" alt="img" />
+                </picture>
+              </span>
+            </span>
+            <span class="categories-card__name">Новинки</span>
+          </a>
+        </li>
+        <li class="categories-slider__slide swiper-slide">
+          <a class="categories-card" href="#">
+            <span class="categories-card__img-wrap">
+              <svg
+                class="card-border"
+                xmlns="http://www.w3.org/2000/svg"
+                width="135"
+                height="135"
+                viewBox="0 0 135 135"
+                fill="none"
+              >
+                <circle
+                  cx="67.5"
+                  cy="67.5"
+                  r="66.5"
+                  stroke="#8B8B8B"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                />
+              </svg>
+              <span class="categories-card__img">
+                <picture>
+                  <source srcset="img/categories/2.webp" type="image/webp" />
+                  <img src="img/categories/2.png" alt="img" />
+                </picture>
+              </span>
+            </span>
+            <span class="categories-card__name">Новинки</span>
+          </a>
+        </li>
+        <li class="categories-slider__slide swiper-slide">
+          <a class="categories-card" href="#">
+            <span class="categories-card__img-wrap">
+              <svg
+                class="card-border"
+                xmlns="http://www.w3.org/2000/svg"
+                width="135"
+                height="135"
+                viewBox="0 0 135 135"
+                fill="none"
+              >
+                <circle
+                  cx="67.5"
+                  cy="67.5"
+                  r="66.5"
+                  stroke="#8B8B8B"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                />
+              </svg>
+              <span class="categories-card__img">
+                <picture>
+                  <source srcset="img/categories/3.webp" type="image/webp" />
+                  <img src="img/categories/3.png" alt="img" />
+                </picture>
+              </span>
+            </span>
+            <span class="categories-card__name">Новинки</span>
+          </a>
+        </li>
+        <li class="categories-slider__slide swiper-slide">
+          <a class="categories-card" href="#">
+            <span class="categories-card__img-wrap">
+              <svg
+                class="card-border"
+                xmlns="http://www.w3.org/2000/svg"
+                width="135"
+                height="135"
+                viewBox="0 0 135 135"
+                fill="none"
+              >
+                <circle
+                  cx="67.5"
+                  cy="67.5"
+                  r="66.5"
+                  stroke="#8B8B8B"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                />
+              </svg>
+              <span class="categories-card__img">
+                <picture>
+                  <source srcset="img/categories/4.webp" type="image/webp" />
+                  <img src="img/categories/4.png" alt="img" />
+                </picture>
+              </span>
+            </span>
+            <span class="categories-card__name">Новинки</span>
+          </a>
+        </li>
+        <li class="categories-slider__slide swiper-slide">
+          <a class="categories-card" href="#">
+            <span class="categories-card__img-wrap">
+              <svg
+                class="card-border"
+                xmlns="http://www.w3.org/2000/svg"
+                width="135"
+                height="135"
+                viewBox="0 0 135 135"
+                fill="none"
+              >
+                <circle
+                  cx="67.5"
+                  cy="67.5"
+                  r="66.5"
+                  stroke="#8B8B8B"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                />
+              </svg>
+              <span class="categories-card__img">
+                <picture>
+                  <source srcset="img/categories/5.webp" type="image/webp" />
+                  <img src="img/categories/5.png" alt="img" />
+                </picture>
+              </span>
+            </span>
+            <span class="categories-card__name">Новинки</span>
+          </a>
+        </li>
+        <li class="categories-slider__slide swiper-slide">
+          <a class="categories-card" href="#">
+            <span class="categories-card__img-wrap">
+              <svg
+                class="card-border"
+                xmlns="http://www.w3.org/2000/svg"
+                width="135"
+                height="135"
+                viewBox="0 0 135 135"
+                fill="none"
+              >
+                <circle
+                  cx="67.5"
+                  cy="67.5"
+                  r="66.5"
+                  stroke="#8B8B8B"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                />
+              </svg>
+              <span class="categories-card__img">
+                <picture>
+                  <source srcset="img/categories/6.webp" type="image/webp" />
+                  <img src="img/categories/6.png" alt="img" />
+                </picture>
+              </span>
+            </span>
+            <span class="categories-card__name">Новинки</span>
+          </a>
+        </li>
+        <li class="categories-slider__slide swiper-slide">
+          <a class="categories-card" href="#">
+            <span class="categories-card__img-wrap">
+              <svg
+                class="card-border"
+                xmlns="http://www.w3.org/2000/svg"
+                width="135"
+                height="135"
+                viewBox="0 0 135 135"
+                fill="none"
+              >
+                <circle
+                  cx="67.5"
+                  cy="67.5"
+                  r="66.5"
+                  stroke="#8B8B8B"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                />
+              </svg>
+              <span class="categories-card__img">
+                <picture>
+                  <source srcset="img/categories/7.webp" type="image/webp" />
+                  <img src="img/categories/7.png" alt="img" />
+                </picture>
+              </span>
+            </span>
+            <span class="categories-card__name">Новинки</span>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+        <section class="snowboards">
+  <div class="container">
+    <h2 class="snowboards__title">Сноуборды для горнолыжных склонов</h2>
+
+    <div class="snowboards__wrapper">
+      <ul class="snowboards__list">
+        <li class="snowboards__item">
+          <article class="products-card">
+            <button
+              class="products-card__btn-fav products-card__btn-fav--fill"
+              type="button"
+              aria-label="Добавить в избранное"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12z"
+                />
+              </svg>
+            </button>
+            <a class="products-card__top" href="#">
+              <picture>
+                <source srcset="img/snowboards/1.webp" type="image/webp" />
+                <img src="img/snowboards/1.png" alt="img" />
+              </picture>
+            </a>
+            <div class="products-card__body">
+              <h3 class="products-card__title">Kapita</h3>
+              <div class="products-card__text">
+                <p>Сноуборды CAPITA</p>
+                <p>MICRO MINI</p>
+              </div>
+              <span class="products-card__price">26 950 руб</span>
+
+              <button class="products-card__btn btn" type="button">
+                Добавить
+              </button>
+            </div>
+          </article>
+        </li>
+        <li class="snowboards__item">
+          <article class="products-card">
+            <button
+              class="products-card__btn-fav"
+              type="button"
+              aria-label="Добавить в избранное"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="w-6 h-6"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12z"
+                />
+              </svg>
+            </button>
+            <a class="products-card__top" href="#">
+              <picture>
+                <source srcset="img/snowboards/2.webp" type="image/webp" />
+                <img src="img/snowboards/2.png" alt="img" />
+              </picture>
+            </a>
+            <div class="products-card__body">
+              <h3 class="products-card__title">Kapita</h3>
+              <div class="products-card__text">
+                <p>Сноуборды CAPITA</p>
+                <p>MICRO MINI</p>
+              </div>
+              <span class="products-card__price">26 950 руб</span>
+              <button class="products-card__btn btn" type="button">
+                Добавить
+              </button>
+            </div>
+          </article>
+        </li>
+        <li class="snowboards__item">
+          <article class="products-card">
+            <button
+              class="products-card__btn-fav"
+              type="button"
+              aria-label="Добавить в избранное"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="w-6 h-6"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12z"
+                />
+              </svg>
+            </button>
+            <a class="products-card__top" href="#">
+              <picture>
+                <source srcset="img/snowboards/3.webp" type="image/webp" />
+                <img src="img/snowboards/3.png" alt="img" />
+              </picture>
+            </a>
+            <div class="products-card__body">
+              <h3 class="products-card__title">Kapita</h3>
+              <div class="products-card__text">
+                <p>Сноуборды CAPITA</p>
+                <p>MICRO MINI</p>
+              </div>
+              <span class="products-card__price">26 950 руб</span>
+              <button class="products-card__btn btn" type="button">
+                Добавить
+              </button>
+            </div>
+          </article>
+        </li>
+        <li class="snowboards__item">
+          <article class="products-card">
+            <button
+              class="products-card__btn-fav"
+              type="button"
+              aria-label="Добавить в избранное"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="w-6 h-6"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12z"
+                />
+              </svg>
+            </button>
+            <a class="products-card__top" href="#">
+              <picture>
+                <source srcset="img/snowboards/4.webp" type="image/webp" />
+                <img src="img/snowboards/4.png" alt="img" />
+              </picture>
+            </a>
+            <div class="products-card__body">
+              <h3 class="products-card__title">Kapita</h3>
+              <div class="products-card__text">
+                <p>Сноуборды CAPITA</p>
+                <p>MICRO MINI</p>
+              </div>
+              <span class="products-card__price">26 950 руб</span>
+              <button class="products-card__btn btn" type="button">
+                Добавить
+              </button>
+            </div>
+          </article>
+        </li>
+      </ul>
+      <div
+        class="snowboards-banner"
+        style="background-image: url('img/snowboards/banner.jpg')"
+      >
+        <div class="snowboards-banner__offer">
+          <h3 class="snowboards-banner__title">
+            Как выбрать сноуборд и экипировку
+          </h3>
+          <a class="snowboards-banner__btn btn btn--arrow" href="#">
+            Перейти к статье
+            <svg
+              width="24"
+              height="25"
+              viewBox="0 0 24 25"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <g clip-path="url(#clip0_2302_188)">
+                <path
+                  d="M23.12 10.668L19.25 6.75796C19.157 6.66423 19.0464 6.58983 18.9246 6.53906C18.8027 6.4883 18.672 6.46216 18.54 6.46216C18.408 6.46216 18.2773 6.4883 18.1554 6.53906C18.0336 6.58983 17.923 6.66423 17.83 6.75796C17.6437 6.94532 17.5392 7.19877 17.5392 7.46296C17.5392 7.72714 17.6437 7.98059 17.83 8.16796L21.39 11.758H1C0.734784 11.758 0.48043 11.8633 0.292893 12.0508C0.105357 12.2384 0 12.4927 0 12.758H0C0 13.0232 0.105357 13.2775 0.292893 13.4651C0.48043 13.6526 0.734784 13.758 1 13.758H21.45L17.83 17.368C17.7363 17.4609 17.6619 17.5715 17.6111 17.6934C17.5603 17.8152 17.5342 17.9459 17.5342 18.078C17.5342 18.21 17.5603 18.3407 17.6111 18.4625C17.6619 18.5844 17.7363 18.695 17.83 18.788C17.923 18.8817 18.0336 18.9561 18.1554 19.0068C18.2773 19.0576 18.408 19.0838 18.54 19.0838C18.672 19.0838 18.8027 19.0576 18.9246 19.0068C19.0464 18.9561 19.157 18.8817 19.25 18.788L23.12 14.908C23.6818 14.3455 23.9974 13.583 23.9974 12.788C23.9974 11.993 23.6818 11.2305 23.12 10.668Z"
+                  fill="currentColor"
+                />
+              </g>
+              <defs>
+                <clipPath id="clip0_2302_188">
+                  <rect
+                    width="24"
+                    height="24"
+                    fill="currentColor"
+                    transform="translate(0 0.758057)"
+                  />
+                </clipPath>
+              </defs>
+            </svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+        <section class="collections">
+  <div class="container">
+    <h2 class="collections__title section-title">Подборки</h2>
+
+    <div class="collections__slider swiper">
+      <ul class="collections__list swiper-wrapper">
+        <li class="collections__item swiper-slide">
+          <article class="collections-card">
+            <div class="collections-card__img">
+              <picture>
+                <source srcset="img/collections/1.webp" type="image/webp" />
+                <img src="img/collections/1.jpg" alt="img" />
+              </picture>
+            </div>
+            <div class="collections-card__body">
+              <h3 class="collections-card__title">
+                Коллекция новых сноубордов Burton
+              </h3>
+              <a class="collections-card__btn btn btn--arrow" href="#">
+                Перейти
+                <svg
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <g clip-path="url(#clip0_2302_21510)">
+                    <path
+                      d="M23.12 9.9099L19.25 5.9999C19.157 5.90617 19.0464 5.83178 18.9246 5.78101C18.8027 5.73024 18.672 5.7041 18.54 5.7041C18.408 5.7041 18.2773 5.73024 18.1554 5.78101C18.0336 5.83178 17.923 5.90617 17.83 5.9999V5.9999C17.6437 6.18726 17.5392 6.44071 17.5392 6.7049C17.5392 6.96909 17.6437 7.22254 17.83 7.4099L21.39 10.9999H1C0.734784 10.9999 0.48043 11.1053 0.292893 11.2928C0.105357 11.4803 0 11.7347 0 11.9999H0C0 12.2651 0.105357 12.5195 0.292893 12.707C0.48043 12.8945 0.734784 12.9999 1 12.9999H21.45L17.83 16.6099C17.7363 16.7029 17.6619 16.8135 17.6111 16.9353C17.5603 17.0572 17.5342 17.1879 17.5342 17.3199C17.5342 17.4519 17.5603 17.5826 17.6111 17.7045C17.6619 17.8263 17.7363 17.9369 17.83 18.0299C17.923 18.1236 18.0336 18.198 18.1554 18.2488C18.2773 18.2996 18.408 18.3257 18.54 18.3257C18.672 18.3257 18.8027 18.2996 18.9246 18.2488C19.0464 18.198 19.157 18.1236 19.25 18.0299L23.12 14.1499C23.6818 13.5874 23.9974 12.8249 23.9974 12.0299C23.9974 11.2349 23.6818 10.4724 23.12 9.9099V9.9099Z"
+                      fill="currentColor"
+                    />
+                  </g>
+                  <defs>
+                    <clipPath id="clip0_2302_21510">
+                      <rect width="24" height="24" fill="currentColor" />
+                    </clipPath>
+                  </defs>
+                </svg>
+              </a>
+            </div>
+          </article>
+        </li>
+        <li class="collections__item swiper-slide">
+          <article class="collections-card">
+            <div class="collections-card__img">
+              <picture>
+                <source srcset="img/collections/2.webp" type="image/webp" />
+                <img src="img/collections/2.jpg" alt="img" />
+              </picture>
+            </div>
+            <div class="collections-card__body">
+              <h3 class="collections-card__title">
+                Будь яркой на склоне в Сахалине
+              </h3>
+              <a class="collections-card__btn btn btn--arrow" href="#">
+                Перейти
+                <svg
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <g clip-path="url(#clip0_2302_21510)">
+                    <path
+                      d="M23.12 9.9099L19.25 5.9999C19.157 5.90617 19.0464 5.83178 18.9246 5.78101C18.8027 5.73024 18.672 5.7041 18.54 5.7041C18.408 5.7041 18.2773 5.73024 18.1554 5.78101C18.0336 5.83178 17.923 5.90617 17.83 5.9999V5.9999C17.6437 6.18726 17.5392 6.44071 17.5392 6.7049C17.5392 6.96909 17.6437 7.22254 17.83 7.4099L21.39 10.9999H1C0.734784 10.9999 0.48043 11.1053 0.292893 11.2928C0.105357 11.4803 0 11.7347 0 11.9999H0C0 12.2651 0.105357 12.5195 0.292893 12.707C0.48043 12.8945 0.734784 12.9999 1 12.9999H21.45L17.83 16.6099C17.7363 16.7029 17.6619 16.8135 17.6111 16.9353C17.5603 17.0572 17.5342 17.1879 17.5342 17.3199C17.5342 17.4519 17.5603 17.5826 17.6111 17.7045C17.6619 17.8263 17.7363 17.9369 17.83 18.0299C17.923 18.1236 18.0336 18.198 18.1554 18.2488C18.2773 18.2996 18.408 18.3257 18.54 18.3257C18.672 18.3257 18.8027 18.2996 18.9246 18.2488C19.0464 18.198 19.157 18.1236 19.25 18.0299L23.12 14.1499C23.6818 13.5874 23.9974 12.8249 23.9974 12.0299C23.9974 11.2349 23.6818 10.4724 23.12 9.9099V9.9099Z"
+                      fill="currentColor"
+                    />
+                  </g>
+                  <defs>
+                    <clipPath id="clip0_2302_21510">
+                      <rect width="24" height="24" fill="currentColor" />
+                    </clipPath>
+                  </defs>
+                </svg>
+              </a>
+            </div>
+          </article>
+        </li>
+        <li class="collections__item swiper-slide">
+          <article class="collections-card">
+            <div class="collections-card__img">
+              <picture>
+                <source srcset="img/collections/3.webp" type="image/webp" />
+                <img src="img/collections/3.jpg" alt="img" />
+              </picture>
+            </div>
+            <div class="collections-card__body">
+              <h3 class="collections-card__title">Городской ритм жизни</h3>
+              <a class="collections-card__btn btn btn--arrow" href="#">
+                Перейти
+                <svg
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <g clip-path="url(#clip0_2302_21510)">
+                    <path
+                      d="M23.12 9.9099L19.25 5.9999C19.157 5.90617 19.0464 5.83178 18.9246 5.78101C18.8027 5.73024 18.672 5.7041 18.54 5.7041C18.408 5.7041 18.2773 5.73024 18.1554 5.78101C18.0336 5.83178 17.923 5.90617 17.83 5.9999V5.9999C17.6437 6.18726 17.5392 6.44071 17.5392 6.7049C17.5392 6.96909 17.6437 7.22254 17.83 7.4099L21.39 10.9999H1C0.734784 10.9999 0.48043 11.1053 0.292893 11.2928C0.105357 11.4803 0 11.7347 0 11.9999H0C0 12.2651 0.105357 12.5195 0.292893 12.707C0.48043 12.8945 0.734784 12.9999 1 12.9999H21.45L17.83 16.6099C17.7363 16.7029 17.6619 16.8135 17.6111 16.9353C17.5603 17.0572 17.5342 17.1879 17.5342 17.3199C17.5342 17.4519 17.5603 17.5826 17.6111 17.7045C17.6619 17.8263 17.7363 17.9369 17.83 18.0299C17.923 18.1236 18.0336 18.198 18.1554 18.2488C18.2773 18.2996 18.408 18.3257 18.54 18.3257C18.672 18.3257 18.8027 18.2996 18.9246 18.2488C19.0464 18.198 19.157 18.1236 19.25 18.0299L23.12 14.1499C23.6818 13.5874 23.9974 12.8249 23.9974 12.0299C23.9974 11.2349 23.6818 10.4724 23.12 9.9099V9.9099Z"
+                      fill="currentColor"
+                    />
+                  </g>
+                  <defs>
+                    <clipPath id="clip0_2302_21510">
+                      <rect width="24" height="24" fill="currentColor" />
+                    </clipPath>
+                  </defs>
+                </svg>
+              </a>
+            </div>
+          </article>
+        </li>
+        <li class="collections__item swiper-slide">
+          <article class="collections-card">
+            <div class="collections-card__img">
+              <picture>
+                <source srcset="img/collections/4.webp" type="image/webp" />
+                <img src="img/collections/4.jpg" alt="img" />
+              </picture>
+            </div>
+            <div class="collections-card__body">
+              <h3 class="collections-card__title">С заботой о горах</h3>
+              <a class="collections-card__btn btn btn--arrow" href="#">
+                Перейти
+                <svg
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <g clip-path="url(#clip0_2302_21510)">
+                    <path
+                      d="M23.12 9.9099L19.25 5.9999C19.157 5.90617 19.0464 5.83178 18.9246 5.78101C18.8027 5.73024 18.672 5.7041 18.54 5.7041C18.408 5.7041 18.2773 5.73024 18.1554 5.78101C18.0336 5.83178 17.923 5.90617 17.83 5.9999V5.9999C17.6437 6.18726 17.5392 6.44071 17.5392 6.7049C17.5392 6.96909 17.6437 7.22254 17.83 7.4099L21.39 10.9999H1C0.734784 10.9999 0.48043 11.1053 0.292893 11.2928C0.105357 11.4803 0 11.7347 0 11.9999H0C0 12.2651 0.105357 12.5195 0.292893 12.707C0.48043 12.8945 0.734784 12.9999 1 12.9999H21.45L17.83 16.6099C17.7363 16.7029 17.6619 16.8135 17.6111 16.9353C17.5603 17.0572 17.5342 17.1879 17.5342 17.3199C17.5342 17.4519 17.5603 17.5826 17.6111 17.7045C17.6619 17.8263 17.7363 17.9369 17.83 18.0299C17.923 18.1236 18.0336 18.198 18.1554 18.2488C18.2773 18.2996 18.408 18.3257 18.54 18.3257C18.672 18.3257 18.8027 18.2996 18.9246 18.2488C19.0464 18.198 19.157 18.1236 19.25 18.0299L23.12 14.1499C23.6818 13.5874 23.9974 12.8249 23.9974 12.0299C23.9974 11.2349 23.6818 10.4724 23.12 9.9099V9.9099Z"
+                      fill="currentColor"
+                    />
+                  </g>
+                  <defs>
+                    <clipPath id="clip0_2302_21510">
+                      <rect width="24" height="24" fill="currentColor" />
+                    </clipPath>
+                  </defs>
+                </svg>
+              </a>
+            </div>
+          </article>
+        </li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+        <section class="new-items">
+  <div class="container">
+    <h2 class="new-items__title section-title">
+      Новинки из коллекции лучших брендов
+    </h2>
+    <ul class="new-items__list">
+      <li class="new-items__item">
+        <article class="products-card">
+          <button
+            class="products-card__btn-fav products-card__btn-fav--fill"
+            type="button"
+            aria-label="Добавить в избранное"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12z"
+              />
+            </svg>
+          </button>
+          <a class="products-card__top" href="#">
+            <picture>
+              <source srcset="img/snowboards/1.webp" type="image/webp" />
+              <img src="img/snowboards/1.png" alt="img" />
+            </picture>
+          </a>
+          <div class="products-card__body">
+            <h3 class="products-card__title">Kapita</h3>
+            <div class="products-card__text">
+              <p>Сноуборды CAPITA</p>
+              <p>MICRO MINI</p>
+            </div>
+            <span class="products-card__price">26 950 руб</span>
+
+            <button class="products-card__btn btn" type="button">
+              Добавить
+            </button>
+          </div>
+        </article>
+      </li>
+      <li class="new-items__item">
+        <article class="products-card">
+          <button
+            class="products-card__btn-fav products-card__btn-fav--fill"
+            type="button"
+            aria-label="Добавить в избранное"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12z"
+              />
+            </svg>
+          </button>
+          <a class="products-card__top" href="#">
+            <picture>
+              <source srcset="img/snowboards/2.webp" type="image/webp" />
+              <img src="img/snowboards/2.png" alt="img" />
+            </picture>
+          </a>
+          <div class="products-card__body">
+            <h3 class="products-card__title">Kapita</h3>
+            <div class="products-card__text">
+              <p>Сноуборды CAPITA</p>
+              <p>MICRO MINI</p>
+            </div>
+            <span class="products-card__price">26 950 руб</span>
+
+            <button class="products-card__btn btn" type="button">
+              Добавить
+            </button>
+          </div>
+        </article>
+      </li>
+      <li class="new-items__item">
+        <article class="products-card">
+          <button
+            class="products-card__btn-fav products-card__btn-fav--fill"
+            type="button"
+            aria-label="Добавить в избранное"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12z"
+              />
+            </svg>
+          </button>
+          <a class="products-card__top" href="#">
+            <picture>
+              <source srcset="img/snowboards/3.webp" type="image/webp" />
+              <img src="img/snowboards/3.png" alt="img" />
+            </picture>
+          </a>
+          <div class="products-card__body">
+            <h3 class="products-card__title">Kapita</h3>
+            <div class="products-card__text">
+              <p>Сноуборды CAPITA</p>
+              <p>MICRO MINI</p>
+            </div>
+            <span class="products-card__price">26 950 руб</span>
+
+            <button class="products-card__btn btn" type="button">
+              Добавить
+            </button>
+          </div>
+        </article>
+      </li>
+      <li class="new-items__item">
+        <article class="products-card">
+          <button
+            class="products-card__btn-fav products-card__btn-fav--fill"
+            type="button"
+            aria-label="Добавить в избранное"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12z"
+              />
+            </svg>
+          </button>
+          <a class="products-card__top" href="#">
+            <picture>
+              <source srcset="img/snowboards/4.webp" type="image/webp" />
+              <img src="img/snowboards/4.png" alt="img" />
+            </picture>
+          </a>
+          <div class="products-card__body">
+            <h3 class="products-card__title">Kapita</h3>
+            <div class="products-card__text">
+              <p>Сноуборды CAPITA</p>
+              <p>MICRO MINI</p>
+            </div>
+            <span class="products-card__price">26 950 руб</span>
+
+            <button class="products-card__btn btn" type="button">
+              Добавить
+            </button>
+          </div>
+        </article>
+      </li>
+    </ul>
+
+    <a class="new-items__btn btn" href="#">Перейти к покупкам</a>
+  </div>
+</section>
+
+        <section class="community">
+  <div class="container">
+    <div class="community__wrapper">
+      <div class="community__img">
+        <picture>
+          <source srcset="img/community.webp" type="image/webp" />
+          <img src="img/community.jpg" alt="img" />
+        </picture>
+      </div>
+      <div class="community__right">
+        <h2 class="community__title">
+          Мы сами катаем в горах и строим коммьюнити
+        </h2>
+        <p class="community__text">
+          Главный telegram-канал для сноубордистов всего мира. Присоединяйтесь!
+        </p>
+        <a class="community__btn btn btn--arrow" href="#">
+          Telegram Канал
+          <svg
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <g clip-path="url(#clip0_2302_21510)">
+              <path
+                d="M23.12 9.9099L19.25 5.9999C19.157 5.90617 19.0464 5.83178 18.9246 5.78101C18.8027 5.73024 18.672 5.7041 18.54 5.7041C18.408 5.7041 18.2773 5.73024 18.1554 5.78101C18.0336 5.83178 17.923 5.90617 17.83 5.9999V5.9999C17.6437 6.18726 17.5392 6.44071 17.5392 6.7049C17.5392 6.96909 17.6437 7.22254 17.83 7.4099L21.39 10.9999H1C0.734784 10.9999 0.48043 11.1053 0.292893 11.2928C0.105357 11.4803 0 11.7347 0 11.9999H0C0 12.2651 0.105357 12.5195 0.292893 12.707C0.48043 12.8945 0.734784 12.9999 1 12.9999H21.45L17.83 16.6099C17.7363 16.7029 17.6619 16.8135 17.6111 16.9353C17.5603 17.0572 17.5342 17.1879 17.5342 17.3199C17.5342 17.4519 17.5603 17.5826 17.6111 17.7045C17.6619 17.8263 17.7363 17.9369 17.83 18.0299C17.923 18.1236 18.0336 18.198 18.1554 18.2488C18.2773 18.2996 18.408 18.3257 18.54 18.3257C18.672 18.3257 18.8027 18.2996 18.9246 18.2488C19.0464 18.198 19.157 18.1236 19.25 18.0299L23.12 14.1499C23.6818 13.5874 23.9974 12.8249 23.9974 12.0299C23.9974 11.2349 23.6818 10.4724 23.12 9.9099V9.9099Z"
+                fill="currentColor"
+              />
+            </g>
+            <defs>
+              <clipPath id="clip0_2302_21510">
+                <rect width="24" height="24" fill="currentColor" />
+              </clipPath>
+            </defs>
+          </svg>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+        <section class="contacts" id="contacts">
+  <div class="container"></div>
+</section>
+
+      </main>
+      <footer class="footer">
+  <div class="container"></div>
+</footer>
+
+    </div>
+
+    <!-- Swiper JS -->
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+<!-- nouislider -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/noUiSlider/15.5.0/nouislider.min.js"></script>
+
+<!-- jQuery -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+<!-- Choices JS -->
+<script src="https://cdn.jsdelivr.net/npm/choices.js/public/assets/scripts/choices.min.js"></script>
+
+<!-- Input Mask -->
+<script
+  src="https://cdn.jsdelivr.net/npm/jquery.maskedinput@1.4.1/src/jquery.maskedinput.min.js"
+  type="text/javascript"
+></script>
+
+<!-- fancybox -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script>
+
+<!-- JS -->
+<script src="js/main.min.js"></script>
+
+  </body>
+</html>
+
+<!-- <label class="checkbox">
+  <input class="checkbox__input" type="checkbox" required />
+  <span class="checkbox__box"></span>
+  <span class="checkbox__text">
+    Соглашаюсь с<a href="#"> обработкой персональных данных</a>
+  </span> 
+</label> -->
