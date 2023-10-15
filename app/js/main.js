@@ -1,8 +1,10 @@
 window.addEventListener('DOMContentLoaded', () => {
   //   // * ===== Mask input
   //   $('input[type="tel"]').mask('+7 (999) 999-99-99');
-  //   // * ===== Nice Select
-  //   // $('select').niceSelect();
+
+  // * ===== Nice Select
+  $('select').niceSelect();
+
   // * ===== Slider
   (function slider() {
     const sliderEl = document.querySelector('.categories-slider__slider');
