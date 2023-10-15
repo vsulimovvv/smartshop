@@ -48,37 +48,60 @@ window.addEventListener('DOMContentLoaded', () => {
       },
     });
   })();
+  // * ===== Slider
+  (function slider() {
+    const sliderEl = document.querySelector('.brands-row__slider');
+    new Swiper(sliderEl, {
+      slidesPerView: 'auto',
+      spaceBetween: 115,
+      loop: true,
+      speed: 5000,
 
-  //   // * ===== Slider
-  //   (function slider() {
-  //     const sliderEl = document.querySelector('.works__slider');
-  //     new Swiper(sliderEl, {
-  //       pagination: {
-  //         el: '.swiper-pagination',
-  //       },
-  //       slidesPerView: 'auto',
-  //       spaceBetween: 20,
-  //       navigation: {
-  //         nextEl: '.works__slider .swiper-button-next',
-  //         prevEl: '.works__slider .swiper-button-prev',
-  //       },
-  //     });
-  //   })();
-  //   // * ===== Slider
-  //   (function slider() {
-  //     const sliderEl = document.querySelector('.price-list-top__slider');
-  //     new Swiper(sliderEl, {
-  //       slidesPerView: 'auto',
-  //       centeredSlides: true,
-  //       slideToClickedSlide: true,
-  //       initialSlide: 4,
-  //       spaceBetween: 20,
-  //       navigation: {
-  //         nextEl: '.price-list-top__slider .swiper-button-next',
-  //         prevEl: '.price-list-top__slider .swiper-button-prev',
-  //       },
-  //     });
-  //   })();
+      autoplay: {
+        delay: 0,
+        disableOnInteraction: false, // или сделать так, чтобы восстанавливался autoplay после взаимодействия
+      },
+
+      breakpoints: {
+        315: {
+          slidesPerView: 'auto',
+          spaceBetween: 20,
+        },
+        576: {
+          spaceBetween: 30,
+          slidesPerView: 'auto',
+        },
+        768: {
+          spaceBetween: 50,
+        },
+        991: {
+          slidesPerView: 'auto',
+          spaceBetween: 115,
+        },
+      },
+    });
+  })();
+
+  // * ===== Accordion
+  const toggleAccordion = (accordionControl, accordionContent, accordion) => {
+    const filters = document.querySelectorAll(accordionControl);
+    filters.forEach((el) => {
+      if (el) {
+        el.addEventListener('click', (e) => {
+          const target = e.target.closest(accordion);
+          const content = target.querySelector(accordionContent);
+          target.classList.toggle('active');
+          if (target.classList.contains('active')) {
+            content.style.maxHeight = content.scrollHeight + 'px';
+          } else {
+            content.style.maxHeight = null;
+          }
+        });
+      }
+    });
+  };
+  toggleAccordion('.accordion-control-btn', '.accordion-content', '.accordion');
+
   //   // * ===== Fixed Header
   //   (function fixedHeader() {
   //     function scrollHeader() {
