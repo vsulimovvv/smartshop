@@ -2214,6 +2214,8 @@ picture {
   position: relative;
   z-index: 1;
   overflow: hidden;
+  background-image: -webkit-image-set(url("../img/snowboards/banner-2x.webp") type("image/webp") 2x, url("../img/snowboards/banner.webp") type("image/webp") 1x, url("../img/snowboards/banner-2x.jpg") type("image/jpeg") 2x, url("../img/snowboards/banner.jpg") type("image/jpeg") 1x);
+  background-image: image-set(url("../img/snowboards/banner-2x.webp") type("image/webp") 2x, url("../img/snowboards/banner.webp") type("image/webp") 1x, url("../img/snowboards/banner-2x.jpg") type("image/jpeg") 2x, url("../img/snowboards/banner.jpg") type("image/jpeg") 1x);
 }
 .snowboards-banner::after {
   position: absolute;
