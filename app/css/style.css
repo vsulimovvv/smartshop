@@ -4195,7 +4195,13 @@ picture {
   margin-bottom: 40px;
 }
 .products-topic__btn {
-  width: 415px;
+  max-width: 415px;
+  width: 100%;
+}
+@media (max-width: 767.98px) {
+  .products-topic__btn {
+    max-width: 100%;
+  }
 }
 
 .table {
@@ -4226,6 +4232,12 @@ picture {
       -ms-flex-align: center;
           align-items: center;
   background-color: var(--color-white);
+}
+@media (max-width: 991.98px) {
+  .table__row {
+    -ms-grid-columns: 180px (1fr)[10];
+    grid-template-columns: 180px repeat(10, 1fr);
+  }
 }
 .table__row:not(:first-child) {
   border-top: 1px solid #ddd;
