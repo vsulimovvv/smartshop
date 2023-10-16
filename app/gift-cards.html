@@ -390,12 +390,13 @@
 </header>
 
 
-      <main class="main"><section class="gift-card">
+      <main class="main"><section class="gift-cards">
   <div class="container">
-    <div class="gift-card__wrapper">
-      <div class="gift-card__left">
-        <h1 class="gift-card__title page-title">Подарочная карта</h1>
-        <div class="gift-card__img">
+    <h1 class="gift-cards__title page-title">Оформление подарочной карты</h1>
+
+    <ul class="gift-cards__list">
+      <li class="gift-cards-item">
+        <div class="gift-cards-item__top">
           <picture>
             <source
               srcset="img/gift-cards/1.webp, img/gift-cards/1-2x.webp 2x"
@@ -408,46 +409,57 @@
             />
           </picture>
         </div>
-      </div>
-      <div class="gift-card__right">
-        <span class="gift-card__name">Выберите номинал</span>
-
-        <form class="gift-card__form">
-          <div class="gift-card__radios">
-            <label class="radio">
-              <input class="radio__input" type="radio" name="price" checked />
-              <span class="radio__box"></span>
-              <span class="radio__text"> 5,000 ₽ </span>
-            </label>
-            <label class="radio">
-              <input class="radio__input" type="radio" name="price" />
-              <span class="radio__box"></span>
-              <span class="radio__text">10,000 ₽</span>
-            </label>
-            <label class="radio">
-              <input class="radio__input" type="radio" name="price" />
-              <span class="radio__box"></span>
-              <span class="radio__text">20,000 ₽ </span>
-            </label>
-            <label class="radio">
-              <input class="radio__input" type="radio" name="price" />
-              <span class="radio__box"></span>
-              <span class="radio__text"> 50,000 ₽ </span>
-            </label>
-          </div>
-          <label class="gift-card__group">
-            <input
-              class="gift-card__input"
-              type="text"
-              placeholder="Другая сумма"
+        <span class="gift-cards-item__price">1,000 ₽</span>
+      </li>
+      <li class="gift-cards-item">
+        <div class="gift-cards-item__top">
+          <picture>
+            <source
+              srcset="img/gift-cards/1.webp, img/gift-cards/1-2x.webp 2x"
+              type="image/webp"
             />
-          </label>
-          <button class="gift-card__btn btn" type="button">
-            Добавить в корзину
-          </button>
-        </form>
-      </div>
-    </div>
+            <img
+              srcset="img/gift-cards/1.png, img/gift-cards/1-2x.png 2x"
+              src="img/gift-cards/1.png"
+              alt="img"
+            />
+          </picture>
+        </div>
+        <span class="gift-cards-item__price">1,000 ₽</span>
+      </li>
+      <li class="gift-cards-item">
+        <div class="gift-cards-item__top">
+          <picture>
+            <source
+              srcset="img/gift-cards/1.webp, img/gift-cards/1-2x.webp 2x"
+              type="image/webp"
+            />
+            <img
+              srcset="img/gift-cards/1.png, img/gift-cards/1-2x.png 2x"
+              src="img/gift-cards/1.png"
+              alt="img"
+            />
+          </picture>
+        </div>
+        <span class="gift-cards-item__price">1,000 ₽</span>
+      </li>
+      <li class="gift-cards-item">
+        <div class="gift-cards-item__top">
+          <picture>
+            <source
+              srcset="img/gift-cards/1.webp, img/gift-cards/1-2x.webp 2x"
+              type="image/webp"
+            />
+            <img
+              srcset="img/gift-cards/1.png, img/gift-cards/1-2x.png 2x"
+              src="img/gift-cards/1.png"
+              alt="img"
+            />
+          </picture>
+        </div>
+        <span class="gift-cards-item__price">1,000 ₽</span>
+      </li>
+    </ul>
   </div>
 </section>
 </main>
@@ -725,3 +737,11 @@
 
   </body>
 </html>
+
+<!-- <label class="checkbox">
+  <input class="checkbox__input" type="checkbox" required />
+  <span class="checkbox__box"></span>
+  <span class="checkbox__text">
+    Соглашаюсь с<a href="#"> обработкой персональных данных</a>
+  </span> 
+</label> -->

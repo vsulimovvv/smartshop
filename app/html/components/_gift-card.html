@@ -1,0 +1,60 @@
+<section class="gift-card">
+  <div class="container">
+    <div class="gift-card__wrapper">
+      <div class="gift-card__left">
+        <h1 class="gift-card__title page-title">Подарочная карта</h1>
+        <div class="gift-card__img">
+          <picture>
+            <source
+              srcset="img/gift-cards/1.webp, img/gift-cards/1-2x.webp 2x"
+              type="image/webp"
+            />
+            <img
+              srcset="img/gift-cards/1.png, img/gift-cards/1-2x.png 2x"
+              src="img/gift-cards/1.png"
+              alt="img"
+            />
+          </picture>
+        </div>
+      </div>
+      <div class="gift-card__right">
+        <span class="gift-card__name">Выберите номинал</span>
+
+        <form class="gift-card__form">
+          <div class="gift-card__radios">
+            <label class="radio">
+              <input class="radio__input" type="radio" name="price" checked />
+              <span class="radio__box"></span>
+              <span class="radio__text"> 5,000 ₽ </span>
+            </label>
+            <label class="radio">
+              <input class="radio__input" type="radio" name="price" />
+              <span class="radio__box"></span>
+              <span class="radio__text">10,000 ₽</span>
+            </label>
+            <label class="radio">
+              <input class="radio__input" type="radio" name="price" />
+              <span class="radio__box"></span>
+              <span class="radio__text">20,000 ₽ </span>
+            </label>
+            <label class="radio">
+              <input class="radio__input" type="radio" name="price" />
+              <span class="radio__box"></span>
+              <span class="radio__text"> 50,000 ₽ </span>
+            </label>
+          </div>
+          <label class="gift-card__group">
+            <input
+              class="gift-card__input"
+              type="text"
+              placeholder="Другая сумма"
+            />
+          </label>
+          <button class="gift-card__btn btn" type="button">
+            Добавить в корзину
+          </button>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
